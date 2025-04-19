@@ -1,6 +1,6 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+# from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 import os
 from datetime import datetime
@@ -31,7 +31,8 @@ def process_pdf(file_path):
         })
 
     # Generate embeddings for each document chunk
-    embeddings_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-    embeddings = embeddings_model.embed_documents([doc.page_content for doc in docs])
+    # embeddings_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    # embeddings = embeddings_model.embed_documents([doc.page_content for doc in docs])
 
-    return embeddings, docs
+    # return embeddings, docs
+    return docs

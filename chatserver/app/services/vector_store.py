@@ -11,3 +11,4 @@ def store_embeddings(embeddings, documents):
             "metadata": doc.metadata,
             "content": doc.page_content
         })
+
