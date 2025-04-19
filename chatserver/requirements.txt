@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+langchain
+pymongo
+python-dotenv
+sentence-transformers
+langchain-mongodb 
